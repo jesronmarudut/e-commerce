@@ -73,7 +73,7 @@ class SignInPage extends StatelessWidget {
                       child: TextFormField(
                         style: primaryTextStyle,
                         decoration: InputDecoration.collapsed(
-                          hintText: 'Your e-mail address',
+                          hintText: 'Enter your e-mail address',
                           hintStyle: subtitleTextStyle,
                         ),
                       ),
@@ -127,7 +127,7 @@ class SignInPage extends StatelessWidget {
                         style: primaryTextStyle,
                         obscureText: true, //Supaya password di hide
                         decoration: InputDecoration.collapsed(
-                          hintText: 'Your password',
+                          hintText: 'Enter your password',
                           hintStyle: subtitleTextStyle,
                         ),
                       ),

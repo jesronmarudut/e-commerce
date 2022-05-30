@@ -68,7 +68,7 @@ class SignUpPage extends StatelessWidget {
                       child: TextFormField(
                         style: primaryTextStyle,
                         decoration: InputDecoration.collapsed(
-                          hintText: 'Your full name',
+                          hintText: 'Enter your fullname',
                           hintStyle: subtitleTextStyle,
                         ),
                       ),
@@ -121,7 +121,7 @@ class SignUpPage extends StatelessWidget {
                       child: TextFormField(
                         style: primaryTextStyle,
                         decoration: InputDecoration.collapsed(
-                          hintText: 'Your username',
+                          hintText: 'Enter your username',
                           hintStyle: subtitleTextStyle,
                         ),
                       ),
@@ -174,7 +174,7 @@ class SignUpPage extends StatelessWidget {
                       child: TextFormField(
                         style: primaryTextStyle,
                         decoration: InputDecoration.collapsed(
-                          hintText: 'Your e-mail address',
+                          hintText: 'Enter your e-mail address',
                           hintStyle: subtitleTextStyle,
                         ),
                       ),
@@ -228,7 +228,7 @@ class SignUpPage extends StatelessWidget {
                         style: primaryTextStyle,
                         obscureText: true, //Supaya password di hide
                         decoration: InputDecoration.collapsed(
-                          hintText: 'Your password',
+                          hintText: 'Enter your password',
                           hintStyle: subtitleTextStyle,
                         ),
                       ),
@@ -303,22 +303,24 @@ class SignUpPage extends StatelessWidget {
       //hilangin Bottom Overflowed  by 34 pixels
       backgroundColor: backgroundColor1,
       body: SafeArea(
-        child: Container(
-          margin: EdgeInsets.symmetric(
-            horizontal: defaultMargin,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              header(),
-              nameInput(),
-              usernameInput(),
-              emailInput(),
-              passwordInput(),
-              signUpButton(),
-              Spacer(), //Untuk footer
-              footer(),
-            ],
+        child: Expanded(
+          child: Container(
+            margin: EdgeInsets.symmetric(
+              horizontal: defaultMargin,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                header(),
+                nameInput(),
+                usernameInput(),
+                emailInput(),
+                passwordInput(),
+                signUpButton(),
+                Spacer(), //Untuk footer
+                footer(),
+              ],
+            ),
           ),
         ),
       ),
