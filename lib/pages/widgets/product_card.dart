@@ -12,7 +12,7 @@ class ProductCard extends StatelessWidget {
       ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        color: backgroundColor3,
+        color: backgroundColor6,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -38,6 +38,12 @@ class ProductCard extends StatelessWidget {
                   style: subtitleTextStyle.copyWith(
                     fontSize: 12,
                   ),
+                ),
+                SizedBox(
+                  height: 6,
+                ),
+                Text(
+                  'COURT VISION 2.0',
                 ),
               ],
             ),

@@ -74,7 +74,7 @@ class HomePage extends StatelessWidget {
                 ),
                 child: Text(
                   'All Shoes',
-                  style: thirdTextStyle.copyWith(
+                  style: primaryTextStyle.copyWith(
                     fontSize: 13,
                     fontWeight: medium,
                   ),
@@ -206,6 +206,7 @@ class HomePage extends StatelessWidget {
       children: [
         header(),
         categories(),
+        popularProductsTitle(),
         popularProducts(),
       ],
     );

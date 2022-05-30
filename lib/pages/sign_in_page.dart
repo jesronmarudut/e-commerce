@@ -157,7 +157,7 @@ class SignInPage extends StatelessWidget {
           ),
           child: Text(
             'Sign In',
-            style: thirdTextStyle.copyWith(
+            style: primaryTextStyle.copyWith(
               fontSize: 16,
               fontWeight: medium,
             ),
@@ -185,7 +185,7 @@ class SignInPage extends StatelessWidget {
               },
               child: Text(
                 'Sign Up',
-                style: greenTextStyle.copyWith(
+                style: purpleTextStyle.copyWith(
                   fontSize: 12,
                   fontWeight: semiBold,
                 ),
