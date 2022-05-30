@@ -36,7 +36,7 @@ class _MainPageState extends State<MainPage> {
           notchMargin: 12,
           clipBehavior: Clip.antiAlias,
           child: BottomNavigationBar(
-              backgroundColor: subtitleColor,
+              backgroundColor: backgroundColor4,
               currentIndex: currentIndex,
               onTap: (value) {
                 print(value);
@@ -56,7 +56,7 @@ class _MainPageState extends State<MainPage> {
                       'assets/icon_home.png',
                       width: 19,
                       color:
-                          currentIndex == 0 ? primaryColor : Color(0xff808191),
+                          currentIndex == 0 ? primaryColor : Color(0xff504F5E),
                     ),
                   ),
                   label: 'Home',
@@ -71,7 +71,7 @@ class _MainPageState extends State<MainPage> {
                       'assets/icon_chat.png',
                       width: 21,
                       color:
-                          currentIndex == 1 ? primaryColor : Color(0xff808191),
+                          currentIndex == 1 ? primaryColor : Color(0xff504F5E),
                     ),
                   ),
                   label: 'Chat',
@@ -86,7 +86,7 @@ class _MainPageState extends State<MainPage> {
                       'assets/icon_wishlist.png',
                       width: 21,
                       color:
-                          currentIndex == 2 ? primaryColor : Color(0xff808191),
+                          currentIndex == 2 ? primaryColor : Color(0xff504F5E),
                     ),
                   ),
                   label: 'Wishlist',
@@ -101,7 +101,7 @@ class _MainPageState extends State<MainPage> {
                       'assets/icon_profile.png',
                       width: 20,
                       color:
-                          currentIndex == 3 ? primaryColor : Color(0xff808191),
+                          currentIndex == 3 ? primaryColor : Color(0xff504F5E),
                     ),
                   ),
                   label: 'Profile',
