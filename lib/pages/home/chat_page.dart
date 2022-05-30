@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sepatu/pages/widgets/chat_tile.dart';
 import 'package:sepatu/theme.dart';
 
 class ChatPage extends StatelessWidget {
@@ -84,14 +85,18 @@ class ChatPage extends StatelessWidget {
     Widget content() {
       return Expanded(
         child: Container(
-            width: double.infinity,
-            color: backgroundColor3,
-            child: ListView(
-              padding: EdgeInsets.symmetric(
-                horizontal: defaultMargin,
-                vertical: defaultMargin,
-              ),
-            )),
+          width: double.infinity,
+          color: backgroundColor3,
+          child: ListView(
+            padding: EdgeInsets.symmetric(
+              horizontal: defaultMargin,
+              vertical: defaultMargin,
+            ),
+            children: [
+              ChatTile(),
+            ],
+          ),
+        ),
       );
     }
 
