@@ -12,7 +12,7 @@ class ProductCard extends StatelessWidget {
       ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        color: backgroundColor6,
+        color: Color(0xffECEDEF),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -44,6 +44,21 @@ class ProductCard extends StatelessWidget {
                 ),
                 Text(
                   'COURT VISION 2.0',
+                  style: blackTextStyle.copyWith(
+                    fontSize: 18,
+                    fontWeight: semiBold,
+                  ),
+                  overflow: TextOverflow.ellipsis,
+                ),
+                SizedBox(
+                  height: 6,
+                ),
+                Text(
+                  'Rp 799.999',
+                  style: priceTextStyle.copyWith(
+                    fontSize: 14,
+                    fontWeight: medium,
+                  ),
                 ),
               ],
             ),
