@@ -29,14 +29,15 @@ class _MainPageState extends State<MainPage> {
     Widget customBottomNav() {
       return ClipRRect(
         borderRadius: BorderRadius.vertical(
-          top: Radius.circular(30), //buat border NavBar
+          top: Radius.circular(30),
+          //buat border NavBar
         ),
         child: BottomAppBar(
           shape: CircularNotchedRectangle(),
           notchMargin: 12,
           clipBehavior: Clip.antiAlias,
           child: BottomNavigationBar(
-              backgroundColor: backgroundColor4,
+              backgroundColor: backgroundColor6,
               currentIndex: currentIndex,
               onTap: (value) {
                 print(value);

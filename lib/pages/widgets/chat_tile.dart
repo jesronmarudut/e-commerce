@@ -26,7 +26,7 @@ class ChatTile extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Belisepatu.Com',
+                        'Betmen',
                         style: primaryTextStyle.copyWith(
                           fontSize: 15,
                         ),

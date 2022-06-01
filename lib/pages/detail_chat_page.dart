@@ -26,16 +26,16 @@ class DetailChatPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Belisepatu.com',
+                    'Betmen',
                     style: primaryTextStyle.copyWith(
-                      fontSize: 14,
+                      fontSize: 15,
                       fontWeight: regular,
                     ),
                   ),
                   Text(
                     'Online',
                     style: secondaryTextStyle.copyWith(
-                      fontSize: 14,
+                      fontSize: 15,
                       fontWeight: light,
                     ),
                   ),
@@ -127,6 +127,7 @@ class DetailChatPage extends StatelessWidget {
                     ),
                     child: Center(
                       child: TextFormField(
+                        style: primaryTextStyle,
                         decoration: InputDecoration.collapsed(
                           hintText: 'Type Message...',
                           hintStyle: subtitleTextStyle,
@@ -158,6 +159,7 @@ class DetailChatPage extends StatelessWidget {
           ChatBubble(
             isSender: true,
             text: 'Hi, This item is still available?',
+            hasProduct: false,
           ),
           ChatBubble(
             isSender: false,
