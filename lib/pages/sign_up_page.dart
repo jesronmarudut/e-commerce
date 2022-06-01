@@ -6,7 +6,9 @@ class SignUpPage extends StatelessWidget {
   Widget build(BuildContext context) {
     Widget header() {
       return Container(
-        margin: EdgeInsets.only(top: 20),
+        margin: EdgeInsets.only(
+          top: 30,
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -270,7 +272,9 @@ class SignUpPage extends StatelessWidget {
 
     Widget footer() {
       return Container(
-        margin: EdgeInsets.only(bottom: 30),
+        margin: EdgeInsets.only(
+          bottom: 10,
+        ),
         child: Row(
           mainAxisAlignment:
               MainAxisAlignment.center, //biar posisi footer di tengah
