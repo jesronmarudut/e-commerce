@@ -34,7 +34,7 @@ class _MainPageState extends State<MainPage> {
         ),
         child: BottomAppBar(
           shape: CircularNotchedRectangle(),
-          notchMargin: 12,
+          notchMargin: 10,
           clipBehavior: Clip.antiAlias,
           child: BottomNavigationBar(
               backgroundColor: warna2,
@@ -129,6 +129,7 @@ class _MainPageState extends State<MainPage> {
     }
 
     return Scaffold(
+      extendBody: true, //membuat notch transparent
       backgroundColor: warna1,
       floatingActionButton: cartButton(),
       floatingActionButtonLocation:
