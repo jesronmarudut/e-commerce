@@ -11,10 +11,10 @@ class SignInPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Login',
+              'HELLO AGAIN',
               style: primaryTextStyle.copyWith(
                 fontSize: 24,
-                fontWeight: semiBold,
+                fontWeight: bold,
               ),
             ),
             SizedBox(
@@ -25,8 +25,8 @@ class SignInPage extends StatelessWidget {
                 Navigator.pushNamed(context, '/sign-up');
               },
               child: Text(
-                'Sign in to continue',
-                style: subtitleTextStyle,
+                'Wellcome back, you\'ve been missed!',
+                style: primaryTextStyle,
               ),
             ),
           ],
@@ -151,15 +151,15 @@ class SignInPage extends StatelessWidget {
             Navigator.pushNamed(context, '/home'); //route ke Home page
           },
           style: TextButton.styleFrom(
-            backgroundColor: primaryColor,
+            backgroundColor: warna2,
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
           ),
           child: Text(
             'Sign In',
-            style: primaryTextStyle.copyWith(
+            style: secondaryTextStyle.copyWith(
               fontSize: 16,
-              fontWeight: medium,
+              fontWeight: bold,
             ),
           ),
         ),
@@ -185,7 +185,7 @@ class SignInPage extends StatelessWidget {
               },
               child: Text(
                 'Sign Up',
-                style: purpleTextStyle.copyWith(
+                style: primaryTextStyle.copyWith(
                   fontSize: 12,
                   fontWeight: semiBold,
                 ),
@@ -199,7 +199,7 @@ class SignInPage extends StatelessWidget {
     return Scaffold(
       resizeToAvoidBottomInset:
           false, //hilangin Bottom Overflowed  by 34 pixels
-      backgroundColor: backgroundColor1,
+      backgroundColor: warna4,
       body: SafeArea(
         child: Container(
           margin: EdgeInsets.symmetric(

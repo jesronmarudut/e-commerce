@@ -73,11 +73,11 @@ class HomePage extends StatelessWidget {
                 margin: EdgeInsets.only(right: 16),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
-                  color: primaryColor,
+                  color: warna2,
                 ),
                 child: Text(
                   'All Shoes',
-                  style: primaryTextStyle.copyWith(
+                  style: secondaryTextStyle.copyWith(
                     fontSize: 13,
                     fontWeight: medium,
                   ),

@@ -34,7 +34,7 @@ class ProductCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Running',
+                  'Casual',
                   style: subtitleTextStyle.copyWith(
                     fontSize: 12,
                   ),
@@ -43,7 +43,7 @@ class ProductCard extends StatelessWidget {
                   height: 6,
                 ),
                 Text(
-                  'COURT VISION 2.0',
+                  'Adidas Stan Smith',
                   style: blackTextStyle.copyWith(
                     fontSize: 18,
                     fontWeight: semiBold,
@@ -57,7 +57,7 @@ class ProductCard extends StatelessWidget {
                   'Rp 799.999',
                   style: priceTextStyle.copyWith(
                     fontSize: 14,
-                    fontWeight: medium,
+                    fontWeight: semiBold,
                   ),
                 ),
               ],

@@ -7,7 +7,7 @@ class ChatPage extends StatelessWidget {
   Widget build(BuildContext context) {
     Widget header() {
       return AppBar(
-        backgroundColor: backgroundColor1,
+        backgroundColor: warna4,
         centerTitle: true,
         title: Text(
           'Customer Service',
@@ -86,7 +86,7 @@ class ChatPage extends StatelessWidget {
       return Expanded(
         child: Container(
           width: double.infinity,
-          color: backgroundColor3,
+          color: warna1,
           child: ListView(
             padding: EdgeInsets.symmetric(
               horizontal: defaultMargin,

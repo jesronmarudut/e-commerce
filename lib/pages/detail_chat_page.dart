@@ -11,7 +11,7 @@ class DetailChatPage extends StatelessWidget {
       return PreferredSize(
         preferredSize: Size.fromHeight(70),
         child: AppBar(
-          backgroundColor: backgroundColor1,
+          backgroundColor: warna1,
           centerTitle: false,
           title: Row(
             children: [
@@ -54,7 +54,7 @@ class DetailChatPage extends StatelessWidget {
         margin: EdgeInsets.only(bottom: 20),
         padding: EdgeInsets.all(10),
         decoration: BoxDecoration(
-          color: backgroundColor5,
+          color: warna1,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
             color: primaryColor,
@@ -170,7 +170,7 @@ class DetailChatPage extends StatelessWidget {
     }
 
     return Scaffold(
-      backgroundColor: backgroundColor3,
+      backgroundColor: backgroundColor1,
       appBar: header(),
       bottomNavigationBar: chatInput(),
       body: content(),

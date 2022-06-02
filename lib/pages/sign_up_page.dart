@@ -13,7 +13,7 @@ class SignUpPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Sign Up',
+              'HELLO THERE',
               style: primaryTextStyle.copyWith(
                 fontSize: 24,
                 fontWeight: semiBold,
@@ -23,8 +23,8 @@ class SignUpPage extends StatelessWidget {
               height: 2,
             ),
             Text(
-              'Register and happy shoping',
-              style: subtitleTextStyle,
+              'Register below with your details!',
+              style: primaryTextStyle,
             ),
           ],
         ),
@@ -254,16 +254,16 @@ class SignUpPage extends StatelessWidget {
             Navigator.pushNamed(context, '/home');
           },
           style: TextButton.styleFrom(
-            backgroundColor: primaryColor,
+            backgroundColor: warna2,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
             ),
           ),
           child: Text(
             'Sign Up',
-            style: primaryTextStyle.copyWith(
+            style: secondaryTextStyle.copyWith(
               fontSize: 16,
-              fontWeight: medium,
+              fontWeight: bold,
             ),
           ),
         ),
@@ -280,7 +280,7 @@ class SignUpPage extends StatelessWidget {
               MainAxisAlignment.center, //biar posisi footer di tengah
           children: [
             Text(
-              'Already have an account? ',
+              'I am a member! ',
               style: subtitleTextStyle.copyWith(
                 fontSize: 12,
               ),
@@ -290,10 +290,10 @@ class SignUpPage extends StatelessWidget {
                 Navigator.pop(context);
               },
               child: Text(
-                'Sign In',
-                style: purpleTextStyle.copyWith(
+                'Login now',
+                style: primaryTextStyle.copyWith(
                   fontSize: 12,
-                  fontWeight: semiBold,
+                  fontWeight: bold,
                 ),
               ),
             ),

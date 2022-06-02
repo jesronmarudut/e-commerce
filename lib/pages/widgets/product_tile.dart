@@ -29,8 +29,8 @@ class ProductTile extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Football',
-                  style: secondaryTextStyle.copyWith(
+                  'Casual',
+                  style: subtitleTextStyle.copyWith(
                     fontSize: 12,
                   ),
                 ),
@@ -38,7 +38,7 @@ class ProductTile extends StatelessWidget {
                   height: 6,
                 ),
                 Text(
-                  'Predator 20,3 Firm Ground',
+                  'Adidas Superstar Pink Version',
                   style: primaryTextStyle.copyWith(
                     fontSize: 16,
                     fontWeight: semiBold,
