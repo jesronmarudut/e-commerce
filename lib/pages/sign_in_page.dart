@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:sepatu/theme.dart';
 
 class SignInPage extends StatelessWidget {
+  final bool isHidePassword;
+
+  SignInPage({
+    this.isHidePassword = true,
+  });
+
   @override
   Widget build(BuildContext context) {
     Widget header() {
@@ -56,7 +62,7 @@ class SignInPage extends StatelessWidget {
                 horizontal: 16,
               ),
               decoration: BoxDecoration(
-                color: backgroundColor2,
+                color: warna5,
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Center(
@@ -109,7 +115,7 @@ class SignInPage extends StatelessWidget {
                 horizontal: 16,
               ),
               decoration: BoxDecoration(
-                color: backgroundColor2,
+                color: warna5,
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Center(

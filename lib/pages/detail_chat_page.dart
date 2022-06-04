@@ -11,8 +11,10 @@ class DetailChatPage extends StatelessWidget {
       return PreferredSize(
         preferredSize: Size.fromHeight(70),
         child: AppBar(
-          backgroundColor: warna1,
+          foregroundColor: warna2,
+          backgroundColor: warna4,
           centerTitle: false,
+          // shadowColor: blackColor
           title: Row(
             children: [
               Image.asset(
@@ -26,17 +28,17 @@ class DetailChatPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Betmen',
+                    'Joe Alexander',
                     style: primaryTextStyle.copyWith(
                       fontSize: 15,
-                      fontWeight: regular,
+                      fontWeight: medium,
                     ),
                   ),
                   Text(
                     'Online',
-                    style: secondaryTextStyle.copyWith(
-                      fontSize: 15,
-                      fontWeight: light,
+                    style: primaryTextStyle.copyWith(
+                      fontSize: 13,
+                      fontWeight: regular,
                     ),
                   ),
                 ],
@@ -54,10 +56,10 @@ class DetailChatPage extends StatelessWidget {
         margin: EdgeInsets.only(bottom: 20),
         padding: EdgeInsets.all(10),
         decoration: BoxDecoration(
-          color: warna1,
+          color: warna5,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: primaryColor,
+            color: warna2,
           ),
         ),
         child: Row(
@@ -66,7 +68,7 @@ class DetailChatPage extends StatelessWidget {
             ClipRRect(
               borderRadius: BorderRadius.circular(12),
               child: Image.asset(
-                'assets/image_shoes.png',
+                'assets/image_shoes4.png',
                 width: 54,
               ),
             ),
@@ -79,8 +81,10 @@ class DetailChatPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'COURT VISIO...',
-                    style: primaryTextStyle,
+                    'Converse Red',
+                    style: primaryTextStyle.copyWith(
+                      fontWeight: semiBold,
+                    ),
                     overflow: TextOverflow.ellipsis,
                   ),
                   SizedBox(
@@ -98,7 +102,7 @@ class DetailChatPage extends StatelessWidget {
             ),
             Image.asset(
               'assets/button_close.png',
-              width: 22,
+              width: 20,
             ),
           ],
         ),
@@ -123,14 +127,14 @@ class DetailChatPage extends StatelessWidget {
                     ),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
-                      color: backgroundColor4,
+                      color: warna4,
                     ),
                     child: Center(
                       child: TextFormField(
-                        style: primaryTextStyle,
+                        style: secondaryTextStyle,
                         decoration: InputDecoration.collapsed(
                           hintText: 'Type Message...',
-                          hintStyle: subtitleTextStyle,
+                          hintStyle: thirdTextStyle,
                         ),
                       ),
                     ),
@@ -158,19 +162,19 @@ class DetailChatPage extends StatelessWidget {
         children: [
           ChatBubble(
             isSender: true,
-            text: 'Hi, This item is still available?',
-            hasProduct: false,
+            text: 'Punten, size 42 aya nte ?',
+            product: true,
           ),
           ChatBubble(
             isSender: false,
-            text: 'Good night, This item is only available in size 42 and 43',
+            text: 'Nte aya ey, ayana size 42, 43 eyy',
           ),
         ],
       );
     }
 
     return Scaffold(
-      backgroundColor: backgroundColor1,
+      backgroundColor: warna1,
       appBar: header(),
       bottomNavigationBar: chatInput(),
       body: content(),

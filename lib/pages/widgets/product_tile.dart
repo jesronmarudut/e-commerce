@@ -29,7 +29,7 @@ class ProductTile extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Casual',
+                  'Sneaker',
                   style: subtitleTextStyle.copyWith(
                     fontSize: 12,
                   ),
@@ -38,7 +38,7 @@ class ProductTile extends StatelessWidget {
                   height: 6,
                 ),
                 Text(
-                  'Adidas Superstar Pink Version',
+                  'Converse Green',
                   style: primaryTextStyle.copyWith(
                     fontSize: 16,
                     fontWeight: semiBold,
@@ -48,8 +48,8 @@ class ProductTile extends StatelessWidget {
                   height: 6,
                 ),
                 Text(
-                  'Rp 899.999',
-                  style: priceTextStyle.copyWith(fontWeight: medium),
+                  'Rp 799.869',
+                  style: primaryTextStyle.copyWith(fontWeight: medium),
                 ),
               ],
             ),

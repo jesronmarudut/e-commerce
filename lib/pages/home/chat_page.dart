@@ -7,10 +7,11 @@ class ChatPage extends StatelessWidget {
   Widget build(BuildContext context) {
     Widget header() {
       return AppBar(
+        foregroundColor: primaryColor,
         backgroundColor: warna4,
         centerTitle: true,
         title: Text(
-          'Customer Service',
+          'Message',
           style: primaryTextStyle.copyWith(
             fontSize: 18,
             fontWeight: medium,

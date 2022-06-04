@@ -6,7 +6,6 @@ double defaultMargin = 30.0;
 Color primaryColor = Color(0xff6C5ECF);
 Color secondaryColor = Color(0xff38ABBE);
 Color alertColor = Color(0xffED6363);
-Color priceColor = Color(0xff2C96F1);
 Color backgroundColor1 = Color(0xffECEDEF);
 Color backgroundColor2 = Color(0xffF1F1F1);
 Color backgroundColor3 = Color(0xff242231);
@@ -20,8 +19,11 @@ Color blackColor = Color(0xff2E2E2E);
 
 Color warna1 = Color(0xffFFFFFF); //Pure Putih
 Color warna2 = Color(0xff000000); //Pure Hitam
-Color warna3 = Color(0xff504F5E);
-Color warna4 = Color(0xffECEDEF); //Putih agak-agak
+Color warna3 = Color(0xff504F5E); // Abu-abu
+Color warna4 = Color(0xffECEDEF);
+Color warna5 = Color(0xffF2F2F2); //Background TextBox
+Color warna6 = Color(0xff999999); //Background card product di chat
+Color priceColor = Color(0xffB11E31);
 Color transparentColor = Colors.transparent;
 
 TextStyle primaryTextStyle = GoogleFonts.poppins(
@@ -30,6 +32,10 @@ TextStyle primaryTextStyle = GoogleFonts.poppins(
 
 TextStyle secondaryTextStyle = GoogleFonts.poppins(
   color: warna1,
+);
+
+TextStyle thirdTextStyle = GoogleFonts.poppins(
+  color: warna3,
 );
 
 TextStyle subtitleTextStyle = GoogleFonts.poppins(

@@ -20,14 +20,14 @@ class HomePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Hallo, Ucup',
+                    'Hallo, Jes',
                     style: primaryTextStyle.copyWith(
                       fontSize: 24,
                       fontWeight: semiBold,
                     ),
                   ),
                   Text(
-                    '@legend_ucup',
+                    '@jsrnmrdt',
                     style: subtitleTextStyle.copyWith(
                       fontSize: 16,
                     ),

@@ -5,12 +5,12 @@ import 'package:sepatu/theme.dart';
 class ChatBubble extends StatelessWidget {
   final String text;
   final bool isSender;
-  final bool hasProduct; //untuk tampilan product ada ata tidak
+  final bool product; //untuk tampilan product ada ata tidak
 
   ChatBubble({
     this.isSender = false,
     this.text = '',
-    this.hasProduct = false,
+    this.product = false,
   });
 
   @override
@@ -27,7 +27,7 @@ class ChatBubble extends StatelessWidget {
             bottomLeft: Radius.circular(12),
             bottomRight: Radius.circular(12),
           ),
-          color: isSender ? backgroundColor5 : backgroundColor4,
+          color: isSender ? warna2 : warna2,
         ),
         child: Column(
           children: [
@@ -36,7 +36,7 @@ class ChatBubble extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(12),
                   child: Image.asset(
-                    'assets/image_shoes4.png',
+                    'assets/image_shoes5.png',
                     width: 70,
                   ),
                 ),
@@ -48,15 +48,17 @@ class ChatBubble extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'COURT VISION 2.0 SHOES',
-                        style: primaryTextStyle,
+                        'Nike Air Max',
+                        style: secondaryTextStyle.copyWith(
+                          fontWeight: semiBold,
+                        ),
                       ),
                       SizedBox(
                         height: 4,
                       ),
                       Text(
                         'Rp 549.999',
-                        style: priceTextStyle.copyWith(fontWeight: medium),
+                        style: secondaryTextStyle.copyWith(fontWeight: medium),
                       ),
                     ],
                   ),
@@ -72,7 +74,7 @@ class ChatBubble extends StatelessWidget {
                   onPressed: () {},
                   style: OutlinedButton.styleFrom(
                     side: BorderSide(
-                      color: primaryColor,
+                      color: warna1,
                     ),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
@@ -80,7 +82,7 @@ class ChatBubble extends StatelessWidget {
                   ),
                   child: Text(
                     'Add to cart',
-                    style: purpleTextStyle,
+                    style: secondaryTextStyle.copyWith(fontWeight: medium),
                   ),
                 ),
                 SizedBox(
@@ -89,14 +91,17 @@ class ChatBubble extends StatelessWidget {
                 TextButton(
                   onPressed: () {},
                   style: TextButton.styleFrom(
-                    backgroundColor: primaryColor,
+                    backgroundColor: warna1,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
                   ),
                   child: Text(
                     'Buy Now',
-                    style: primaryTextStyle,
+                    style: GoogleFonts.poppins(
+                      color: warna2,
+                      fontWeight: medium,
+                    ),
                   ),
                 ),
               ],
@@ -113,7 +118,7 @@ class ChatBubble extends StatelessWidget {
         crossAxisAlignment:
             isSender ? CrossAxisAlignment.end : CrossAxisAlignment.start,
         children: [
-          hasProduct ? productPreview() : SizedBox(),
+          product ? productPreview() : SizedBox(),
           Row(
             mainAxisAlignment:
                 isSender ? MainAxisAlignment.end : MainAxisAlignment.start,
@@ -135,11 +140,11 @@ class ChatBubble extends StatelessWidget {
                       bottomLeft: Radius.circular(12),
                       bottomRight: Radius.circular(12),
                     ),
-                    color: isSender ? backgroundColor5 : backgroundColor4,
+                    color: isSender ? warna2 : warna2,
                   ),
                   child: Text(
                     text,
-                    style: primaryTextStyle,
+                    style: secondaryTextStyle,
                   ),
                 ),
               ),

@@ -35,7 +35,7 @@ class ProductCard extends StatelessWidget {
               children: [
                 Text(
                   'Casual',
-                  style: subtitleTextStyle.copyWith(
+                  style: thirdTextStyle.copyWith(
                     fontSize: 12,
                   ),
                 ),
@@ -44,7 +44,7 @@ class ProductCard extends StatelessWidget {
                 ),
                 Text(
                   'Adidas Stan Smith',
-                  style: blackTextStyle.copyWith(
+                  style: primaryTextStyle.copyWith(
                     fontSize: 18,
                     fontWeight: semiBold,
                   ),
@@ -54,10 +54,10 @@ class ProductCard extends StatelessWidget {
                   height: 6,
                 ),
                 Text(
-                  'Rp 799.999',
-                  style: priceTextStyle.copyWith(
+                  'Rp 899.999',
+                  style: primaryTextStyle.copyWith(
                     fontSize: 14,
-                    fontWeight: semiBold,
+                    fontWeight: medium,
                   ),
                 ),
               ],

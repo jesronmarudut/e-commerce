@@ -26,15 +26,14 @@ class ChatTile extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Betmen',
+                        'Joe Alexander',
                         style: primaryTextStyle.copyWith(
-                          fontSize: 15,
-                        ),
+                            fontSize: 15, fontWeight: semiBold),
                       ),
                       Text(
-                        'Good night, This item is on..',
-                        style: secondaryTextStyle.copyWith(
-                          fontWeight: light,
+                        'Punten, size 42 aya nte ?',
+                        style: thirdTextStyle.copyWith(
+                          fontWeight: medium,
                         ),
                         overflow: TextOverflow.ellipsis,
                       ),
@@ -43,7 +42,7 @@ class ChatTile extends StatelessWidget {
                 ),
                 Text(
                   'Now',
-                  style: secondaryTextStyle.copyWith(
+                  style: thirdTextStyle.copyWith(
                     fontSize: 10,
                   ),
                 ),

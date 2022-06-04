@@ -53,7 +53,7 @@ class SignUpPage extends StatelessWidget {
                 horizontal: 16,
               ),
               decoration: BoxDecoration(
-                color: backgroundColor2,
+                color: warna5,
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Center(
@@ -106,7 +106,7 @@ class SignUpPage extends StatelessWidget {
                 horizontal: 16,
               ),
               decoration: BoxDecoration(
-                color: backgroundColor2,
+                color: warna5,
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Center(
@@ -159,7 +159,7 @@ class SignUpPage extends StatelessWidget {
                 horizontal: 16,
               ),
               decoration: BoxDecoration(
-                color: backgroundColor2,
+                color: warna5,
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Center(
@@ -212,7 +212,7 @@ class SignUpPage extends StatelessWidget {
                 horizontal: 16,
               ),
               decoration: BoxDecoration(
-                color: backgroundColor2,
+                color: warna5,
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Center(
