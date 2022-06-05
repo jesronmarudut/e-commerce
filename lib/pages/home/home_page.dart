@@ -197,6 +197,7 @@ class HomePage extends StatelessWidget {
                   ProductCard(),
                   ProductCard(),
                   ProductCard(),
+                  ProductCard(),
                 ],
               )
             ],

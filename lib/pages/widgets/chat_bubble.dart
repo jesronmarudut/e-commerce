@@ -27,7 +27,7 @@ class ChatBubble extends StatelessWidget {
             bottomLeft: Radius.circular(12),
             bottomRight: Radius.circular(12),
           ),
-          color: isSender ? warna2 : warna2,
+          color: isSender ? warna4 : warna4,
         ),
         child: Column(
           children: [
@@ -36,7 +36,7 @@ class ChatBubble extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(12),
                   child: Image.asset(
-                    'assets/image_shoes5.png',
+                    'assets/image_shoes6.png',
                     width: 70,
                   ),
                 ),
@@ -49,7 +49,7 @@ class ChatBubble extends StatelessWidget {
                     children: [
                       Text(
                         'Nike Air Max',
-                        style: secondaryTextStyle.copyWith(
+                        style: primaryTextStyle.copyWith(
                           fontWeight: semiBold,
                         ),
                       ),
@@ -58,7 +58,7 @@ class ChatBubble extends StatelessWidget {
                       ),
                       Text(
                         'Rp 549.999',
-                        style: secondaryTextStyle.copyWith(fontWeight: medium),
+                        style: primaryTextStyle.copyWith(fontWeight: medium),
                       ),
                     ],
                   ),
@@ -74,7 +74,7 @@ class ChatBubble extends StatelessWidget {
                   onPressed: () {},
                   style: OutlinedButton.styleFrom(
                     side: BorderSide(
-                      color: warna1,
+                      color: warna2,
                     ),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
@@ -82,7 +82,7 @@ class ChatBubble extends StatelessWidget {
                   ),
                   child: Text(
                     'Add to cart',
-                    style: secondaryTextStyle.copyWith(fontWeight: medium),
+                    style: primaryTextStyle.copyWith(fontWeight: medium),
                   ),
                 ),
                 SizedBox(
@@ -91,17 +91,14 @@ class ChatBubble extends StatelessWidget {
                 TextButton(
                   onPressed: () {},
                   style: TextButton.styleFrom(
-                    backgroundColor: warna1,
+                    backgroundColor: warna2,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
                   ),
                   child: Text(
                     'Buy Now',
-                    style: GoogleFonts.poppins(
-                      color: warna2,
-                      fontWeight: medium,
-                    ),
+                    style: secondaryTextStyle,
                   ),
                 ),
               ],
@@ -140,11 +137,11 @@ class ChatBubble extends StatelessWidget {
                       bottomLeft: Radius.circular(12),
                       bottomRight: Radius.circular(12),
                     ),
-                    color: isSender ? warna2 : warna2,
+                    color: isSender ? warna4 : warna4,
                   ),
                   child: Text(
                     text,
-                    style: secondaryTextStyle,
+                    style: primaryTextStyle,
                   ),
                 ),
               ),

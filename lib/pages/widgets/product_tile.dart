@@ -10,6 +10,7 @@ class ProductTile extends StatelessWidget {
         right: defaultMargin,
         bottom: defaultMargin,
       ),
+      // color: Color(0xffF2F2F2),
       child: Row(
         children: [
           ClipRRect(

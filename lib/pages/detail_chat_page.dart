@@ -56,10 +56,10 @@ class DetailChatPage extends StatelessWidget {
         margin: EdgeInsets.only(bottom: 20),
         padding: EdgeInsets.all(10),
         decoration: BoxDecoration(
-          color: warna5,
+          color: warna4,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: warna2,
+            color: warna4,
           ),
         ),
         child: Row(
@@ -92,7 +92,7 @@ class DetailChatPage extends StatelessWidget {
                   ),
                   Text(
                     'Rp 679.468',
-                    style: priceTextStyle.copyWith(
+                    style: primaryTextStyle.copyWith(
                       fontWeight: medium,
                       fontSize: 14,
                     ),
@@ -131,7 +131,7 @@ class DetailChatPage extends StatelessWidget {
                     ),
                     child: Center(
                       child: TextFormField(
-                        style: secondaryTextStyle,
+                        style: primaryTextStyle,
                         decoration: InputDecoration.collapsed(
                           hintText: 'Type Message...',
                           hintStyle: thirdTextStyle,
