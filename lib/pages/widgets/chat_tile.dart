@@ -26,12 +26,12 @@ class ChatTile extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Joe Alexander',
+                        'Aurelia Vizal',
                         style: primaryTextStyle.copyWith(
                             fontSize: 15, fontWeight: semiBold),
                       ),
                       Text(
-                        'Punten, size 42 aya nte ?',
+                        'Punten, size 42 masih ada?',
                         style: thirdTextStyle.copyWith(
                           fontWeight: medium,
                         ),

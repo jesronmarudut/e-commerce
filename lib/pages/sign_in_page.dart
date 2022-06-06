@@ -205,7 +205,7 @@ class SignInPage extends StatelessWidget {
     return Scaffold(
       resizeToAvoidBottomInset:
           false, //hilangin Bottom Overflowed  by 34 pixels
-      backgroundColor: warna4,
+      backgroundColor: warna1,
       body: SafeArea(
         child: Container(
           margin: EdgeInsets.symmetric(

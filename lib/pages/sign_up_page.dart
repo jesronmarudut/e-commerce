@@ -305,7 +305,7 @@ class SignUpPage extends StatelessWidget {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       //hilangin Bottom Overflowed  by 34 pixels
-      backgroundColor: backgroundColor1,
+      backgroundColor: warna1,
       body: SafeArea(
         child: Expanded(
           child: Container(
@@ -313,7 +313,7 @@ class SignUpPage extends StatelessWidget {
               horizontal: defaultMargin,
             ),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 header(),
                 nameInput(),

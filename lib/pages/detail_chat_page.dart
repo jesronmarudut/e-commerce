@@ -28,7 +28,7 @@ class DetailChatPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Joe Alexander',
+                    'Aurelia Vizal',
                     style: primaryTextStyle.copyWith(
                       fontSize: 15,
                       fontWeight: medium,
@@ -162,12 +162,13 @@ class DetailChatPage extends StatelessWidget {
         children: [
           ChatBubble(
             isSender: true,
-            text: 'Punten, size 42 aya nte ?',
+            text: 'Punten, size 42 masih aya?',
             product: true,
           ),
           ChatBubble(
             isSender: false,
-            text: 'Nte aya ey, ayana size 42, 43 eyy',
+            text:
+                'Maaf, barang untuk size 42 sedang kosong, untuk yang ada cuman 43 dan 41.',
           ),
         ],
       );

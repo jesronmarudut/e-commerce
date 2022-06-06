@@ -26,16 +26,17 @@ class ChatPage extends StatelessWidget {
       return Expanded(
         child: Container(
           width: double.infinity,
-          color: backgroundColor3,
+          color: warna1,
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Image.asset(
                 'assets/icon_CS.png',
-                width: 80,
+                width: 250,
+                height: 250,
               ),
               SizedBox(
-                height: 20,
+                height: 10,
               ),
               Text(
                 'Opss no message yet?',
@@ -45,11 +46,11 @@ class ChatPage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 12,
+                height: 10,
               ),
               Text(
                 'You have never done a transaction',
-                style: secondaryTextStyle,
+                style: thirdTextStyle,
               ),
               SizedBox(
                 height: 20,
@@ -63,16 +64,16 @@ class ChatPage extends StatelessWidget {
                       horizontal: 24,
                       vertical: 10,
                     ),
-                    backgroundColor: primaryColor,
+                    backgroundColor: warna2,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
                     ),
                   ),
                   child: Text(
                     'Explore Store',
-                    style: primaryTextStyle.copyWith(
+                    style: secondaryTextStyle.copyWith(
                       fontSize: 16,
-                      fontWeight: medium,
+                      fontWeight: bold,
                     ),
                   ),
                 ),
@@ -104,8 +105,8 @@ class ChatPage extends StatelessWidget {
     return Column(
       children: [
         header(),
-        content(),
-        // emptyChat(),
+        // content(),
+        emptyChat(),
       ],
     );
   }
